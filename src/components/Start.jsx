@@ -11,11 +11,11 @@ export default function Start({ setUsername }) {
     <div className="start">
       <input
         className="startInput"
-        placeholder="enter your name"
+        placeholder="ስምካ ኣእቱ"
         ref={inputRef}
       />
       <button className="startButton" onClick={handleClick}>
-        Start
+      ጀምር
       </button>
     </div>
   );

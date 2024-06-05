@@ -13,66 +13,330 @@ function App() {
   const data = [
     {
       id: 1,
-      question: "Rolex is a company that specializes in what type of product?",
+      question: "ኣብ ዓለም ዝበለጸ ተጻዋታይ ፊፋ ጌም መን አዩ",
       answers: [
         {
-          text: "Phone",
+          text: "ዩኤል",
           correct: false,
         },
         {
-          text: "Watches",
+          text: "ጆሲ",
           correct: true,
         },
         {
-          text: "Food",
+          text: "ሲራክ",
           correct: false,
         },
         {
-          text: "Cosmetic",
+          text: "ኩሎም ንፉዓት እዮም",
           correct: false,
         },
       ],
     },
     {
       id: 2,
-      question: "When did the website `Facebook` launch?",
+      question: "ኣብ ወርሒ ንፈለማ ግዜ ዝሰጎመ ሰብ መን እዩ፧",
       answers: [
         {
-          text: "2004",
+          text: "ኒል ኣርምስትሮንግ",
           correct: true,
         },
         {
-          text: "2005",
+          text: "ባዝ ኣልድሪን",
           correct: false,
         },
         {
-          text: "2006",
+          text: "ማይክል ኮሊንስ",
           correct: false,
         },
         {
-          text: "2007",
+          text: "ዩሪ ጋጋሪን",
           correct: false,
         },
       ],
     },
     {
       id: 3,
-      question: "Who played the character of harry potter in movie?",
+      question: "ኣየነይቲ ኩባንያ እያ በ ኤክስ X ሎጎ እትፍለጥ?",
       answers: [
         {
-          text: "Johnny Deep",
+          text: "ማይክሮሶፍት",
           correct: false,
         },
         {
-          text: "Leonardo Di Caprio",
+          text: "IBM",
           correct: false,
         },
         {
-          text: "Denzel Washington",
+          text: "ትዊተር",
+          correct: true,
+        },
+        {
+          text: "ኣፕል",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 4,
+      question: "ኣብ ማርቨል ሲነማቲክ ዩኒቨርስ፣  ቶኒ ስታርክ መን እዩ?",
+      answers: [
+        {
+          text: "ኣይሮን ማን",
+          correct: true,
+        },
+        {
+          text: "ካፕቴን ኣመሪካ",
           correct: false,
         },
         {
-          text: "Daniel Red Cliff",
+          text: "ስፓይደር ማን",
+          correct: false,
+        },
+        {
+          text: "ሃልክ",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 5,
+      question: "ኣምፑል ዝመሃዛ መን እዮ?",
+      answers: [
+        {
+          text: "ኣሌክሳንደር ግራሃም ቤል",
+          correct: false,
+        },
+        {
+          text: "ቶማስ ኤዲሰን",
+          correct: true,
+        },
+        {
+          text: "ኒኮላ ተስላ",
+          correct: false,
+        },
+        {
+          text: "ቤንጃሚን ፍራንክሊን",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 6,
+      question: "ኣየናይ ራፐር እዩ በታ ዘ ኮሌጅ ድሮፕኣውትዕ ዘርእስታ ኣልቡም ዝተፈልጠ?",
+      answers: [
+        {
+          text: "ጀይ-ዚ",
+          correct: false,
+        },
+        {
+          text: "ናስ",
+          correct: false,
+        },
+        {
+          text: "ድሬክ",
+          correct: false,
+        },
+        {
+          text: "ካንየ ወስት",
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 7,
+      question: "ስም እታ ብጀፍ በሶስ እተመስረተት ኩባንያ መን እዩ?",
+      answers: [
+        {
+          text: "ማይክሮሶፍት",
+          correct: false,
+        },
+        {
+          text: "ፌስቡክ",
+          correct: false,
+        },
+        {
+          text: "ኣማዞን",
+          correct: true,
+        },
+        {
+          text: "ተስላ",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 8,
+      question: "ንሞና ሊሳ ዝሰኣላ መን እዩ?",
+      answers: [
+        {
+          text: "ፓብሎ ፒካሶ",
+          correct: false,
+        },
+        {
+          text: "ቪንሰንት ቫን ጎግ",
+          correct: false,
+        },
+        {
+          text: "ሚካኤልኣንጀሎ",
+          correct: false,
+        },
+        {
+          text: "ሊዮናርዶ ዳ ቪንቺ",
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 9,
+      question: "ኣብ ማርቨል ሲነማቲክ ዩኒቨርስ ፣ ብላክ ፓንተር መን ኢዩ ፧",
+      answers: [
+        {
+          text: "ኢሪክ ኪልሞንገር",
+          correct: false,
+        },
+        {
+          text: "ቲ ቻላ",
+          correct: true,
+        },
+        {
+          text: "ሳም ዊልሰን",
+          correct: false,
+        },
+        {
+          text: "ባኪ ባርንስ",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 10,
+      question: "ኣቦ ኮምፕዩተራት ተባሂሉ ዚፍለጥ መን እዩ?",
+      answers: [
+        {
+          text: "ስቲቭ ጆብስ",
+          correct: false,
+        },
+        {
+          text: "ቢል ጌትስ",
+          correct: false,
+        },
+        {
+          text: "ቻርለስ ባቤጅ",
+          correct: true,
+        },
+        {
+          text: "ኣለን ቱሪንግ",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 11,
+      question: "ላሪ ፐጅን ሰርገይ ብሪንን ዝመስረቱ ኣየነይቲ ኩባንያ እያ?",
+      answers: [
+        {
+          text: "ኣማዞን",
+          correct: false,
+        },
+        {
+          text: "ጉግል",
+          correct: false,
+        },
+        {
+          text: "ፌስቡክ",
+          correct: false,
+        },
+        {
+          text: "ንቪዳ",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 12,
+      question: "ኣየነይቲ ራፐር እዩ በታ ት ፒምፕ ኤ ባተርፍላይ ዘርእስታ ኣልቡም ዝተፈልጠ?",
+      answers: [
+        {
+          text: "ኢሚነም",
+          correct: false,
+        },
+        {
+          text: "ጃይ ዚ",
+          correct: false,
+        },
+        {
+          text: "ሪክ ሮስ",
+          correct: false,
+        },
+        {
+          text: "ከንድሪክ ለማር",
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 13,
+      question: "ዮሃንስ ጉተንበርግ ብእንታይ ምህዞ እዩ ውሩይ ዝዀነ?",
+      answers: [
+        {
+          text: "ሓታሚት ማኪና",
+          correct: true,
+        },
+        {
+          text: "ተሌፎን",
+          correct: false,
+        },
+        {
+          text: "ስቲም አንጂን",
+          correct: false,
+        },
+        {
+          text: "ረድዮ",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 14,
+      question: "ዓለምለኻዊ መርበብ ሓበሬታ ዝመሃዘ መን እዮ?",
+      answers: [
+        {
+          text: "ስቲቭ ጆብስ",
+          correct: false,
+        },
+        {
+          text: "ቢል ጌትስ",
+          correct: false,
+        },
+        {
+          text: "ቲም በርናርት ሊ",
+          correct: true,
+        },
+        {
+          text: "ማርክ ዛክርበርግ",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 15,
+      question: "ኣብ ትሪክ ዝብልጸ ስፖርታዊ ተጻዋታይ መን እዩ?",
+      answers: [
+        {
+          text: "ማይክል ጆርዳን",
+          correct: true,
+        },
+        {
+          text: "ክሪስትያኖ ሮናልዶ",
+          correct: true,
+        },
+        {
+          text: "ዩሴን ቦልት",
+          correct: true,
+        },
+        {
+          text: "ፍሎይድ ማይውዘር",
           correct: true,
         },
       ],
